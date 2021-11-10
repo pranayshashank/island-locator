@@ -199,4 +199,11 @@ class IslandLocatorTest {
         assertEquals(0, count);
     }
 
+    @Test
+    public void testNull() {
+        int[][] arr = null;
+        int count = geoLocator.countIsland(arr);
+        assertEquals(0, count);
+    }
+
 }
